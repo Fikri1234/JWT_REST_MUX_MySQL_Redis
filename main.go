@@ -1,9 +1,9 @@
 package main
 
 import (
-	"JWT_REST_MUX_MySQL/configuration"
-	"JWT_REST_MUX_MySQL/router"
-	"JWT_REST_MUX_MySQL/util"
+	"JWT_REST_MySQL_JWT_Redis/configuration"
+	"JWT_REST_MySQL_JWT_Redis/router"
+	"JWT_REST_MySQL_JWT_Redis/util"
 	"log"
 	"net/http"
 

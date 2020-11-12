@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"JWT_REST_MUX_MySQL/configuration"
-	"JWT_REST_MUX_MySQL/model"
-	"JWT_REST_MUX_MySQL/util"
+	"JWT_REST_MySQL_JWT_Redis/configuration"
+	"JWT_REST_MySQL_JWT_Redis/model"
+	"JWT_REST_MySQL_JWT_Redis/util"
 	"errors"
 	"log"
 	"strconv"
@@ -131,7 +131,7 @@ func CreateUser(mUser model.MUser) (model.MUser, error) {
 		return mUser, err
 	}
 
-	res, err := crt.Exec(mUser.ID, mUser.UserName, mUser.Password, mUser.AccountExpired,
+	res, err := crt.Exec(mUser.UserName, mUser.Password, mUser.AccountExpired,
 		mUser.AccountLocked, mUser.CredentialsExpired, mUser.Enabled)
 	if err != nil {
 		log.Panic(err)

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"JWT_REST_MUX_MySQL/model"
-	"JWT_REST_MUX_MySQL/repository"
-	"JWT_REST_MUX_MySQL/util"
+	"JWT_REST_MySQL_JWT_Redis/model"
+	"JWT_REST_MySQL_JWT_Redis/repository"
+	"JWT_REST_MySQL_JWT_Redis/util"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -23,35 +23,35 @@ var UserDetailRoutes = model.RoutePrefix{
 			Method:      "GET",
 			Pattern:     "/user/dtl/{id}",
 			HandlerFunc: GetUserDetailByID,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "GetAllUserDetails",
 			Method:      "GET",
 			Pattern:     "/user/dtl/",
 			HandlerFunc: GetAllUserDetails,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "CreateUserDetail",
 			Method:      "POST",
 			Pattern:     "/user/dtl/",
 			HandlerFunc: CreateUserDetail,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "UpdateUserDetail",
 			Method:      "PUT",
 			Pattern:     "/user/dtl/",
 			HandlerFunc: UpdateUserDetail,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "DeleteUserDetailByID",
 			Method:      "DELETE",
 			Pattern:     "/user/dtl/{id}",
 			HandlerFunc: DeleteUserDetailByID,
-			Protected:   false,
+			Protected:   true,
 		},
 	},
 }

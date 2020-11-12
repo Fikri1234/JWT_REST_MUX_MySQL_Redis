@@ -1,9 +1,9 @@
 package service
 
 import (
-	"JWT_REST_MUX_MySQL/model"
-	"JWT_REST_MUX_MySQL/repository"
-	"JWT_REST_MUX_MySQL/util"
+	"JWT_REST_MySQL_JWT_Redis/model"
+	"JWT_REST_MySQL_JWT_Redis/repository"
+	"JWT_REST_MySQL_JWT_Redis/util"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
@@ -47,21 +47,21 @@ var UserRoutes = model.RoutePrefix{
 			Method:      "POST",
 			Pattern:     "/user/",
 			HandlerFunc: CreateUser,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "UpdateUser",
 			Method:      "PUT",
 			Pattern:     "/user/",
 			HandlerFunc: UpdateUser,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "DeleteUserByID",
 			Method:      "DELETE",
 			Pattern:     "/user/{id}",
 			HandlerFunc: DeleteUserByID,
-			Protected:   false,
+			Protected:   true,
 		},
 		model.Route{
 			Name:        "GetUserLogin",
@@ -75,7 +75,7 @@ var UserRoutes = model.RoutePrefix{
 			Method:      "POST",
 			Pattern:     "/logout",
 			HandlerFunc: GetUserLogout,
-			Protected:   false,
+			Protected:   true,
 		},
 	},
 }

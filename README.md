@@ -28,9 +28,10 @@ go get github.com/dgrijalva/jwt-go
 go get github.com/segmentio/ksuid
 go get github.com/gomodule/redigo/redis
 ```
-2. Import dump.sql to your MySQL
+2. Import dump.sql to your MySQL and configure your credential in folder resource
+![Alt text](asset/configureCredentialDB.PNG?raw=true "Configure your credential DB")
 3. Open cmd in your project directory and type `go test -v` , you should get a response similar to the following:
-![Alt text](asset/unitTesting.PNG?raw=true "Response Unit Testing")
+![Alt text](asset/testing.PNG?raw=true "Response Unit Testing")
 
 4. To run application,open cmd in your project directory and type
 ```
@@ -40,14 +41,16 @@ go run main.go
 6. After you download Redis, you’ll need to extract the executables and then double-click on the redis-server executable.
 
 **Sample Payload**
-1. [Get User By Id](asset/getUserById.PNG)
-2. [Get User Detail By Id](asset/getUserDetailById.PNG)
-3. [Get All User](asset/getAllUser.PNG)
-4. [Get All User Detail](asset/getAllUserDetail.PNG)
-5. [Create User](asset/createUser.PNG)
-6. [Create User Detail](asset/createUserDetail.PNG)
-7. [Update User](asset/updateUser.PNG)
-8. [Update User Detail](asset/updateUserDetail.PNG)
-9. [Delete User By Id](asset/deleteUserById.PNG)
-10. [Delete User Detail By Id](asset/deleteUserDetailById.PNG)
-11. [Example error response,in case Update User Detail](asset/updateUserDetailError.PNG)
+1. [Login](asset/login.PNG)
+2. [Logout](asset/logout.PNG)
+3. [Get User By Id](asset/getUserById.PNG)
+4. [Get User Detail By Id](asset/getUserDetailById.PNG)
+5. [Get All User](asset/getAllUser.PNG)
+6. [Get All User Detail](asset/getAllUserDetail.PNG)
+7. [Create User](asset/createUser.PNG)
+8. [Create User Detail](asset/createUserDetail.PNG)
+9. [Update User](asset/updateUser.PNG)
+10. [Update User Detail](asset/updateUserDetail.PNG)
+11. [Delete User By Id](asset/deleteUserById.PNG)
+12. [Delete User Detail By Id](asset/deleteUserDetailById.PNG)
+13. [Example error response,in case Update User Detail](asset/updateUserDetailError.PNG)

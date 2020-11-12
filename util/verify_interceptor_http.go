@@ -1,7 +1,6 @@
 package util
 
 import (
-	"fmt"
 	"net/http"
 	"strconv"
 )
@@ -15,7 +14,7 @@ func VerifyInterceptorHTTP(next http.Handler) http.Handler {
 			ResponseWithError(w, http.StatusUnauthorized, "Verify Token failure. Reason: "+err.Error())
 			return
 		}
-		fmt.Printf("VerifyInterceptorHTTP prinn: %v", accessDetails)
+		// fmt.Printf("VerifyInterceptorHTTP prinn: %v", accessDetails)
 		s := strconv.FormatInt(accessDetails.UserID, 10)
 
 		r.Header.Set("userId", s)

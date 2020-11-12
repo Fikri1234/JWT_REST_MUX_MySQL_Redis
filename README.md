@@ -28,17 +28,17 @@ go get github.com/dgrijalva/jwt-go
 go get github.com/segmentio/ksuid
 go get github.com/gomodule/redigo/redis
 ```
-2. Import dump.sql to your MySQL and configure your credential in folder resource
+2. Download [Redis for Windows](https://github.com/dmajkic/redis/downloads)
+3. After you download Redis, you’ll need to extract the executables and then double-click on the redis-server executable.
+4. Import dump.sql to your MySQL and configure your credential in folder resource
 ![Alt text](asset/configureCredentialDB.PNG?raw=true "Configure your credential DB")
-3. Open cmd in your project directory and type `go test -v` , you should get a response similar to the following:
+5. Open cmd in your project directory and type `go test -v` , you should get a response similar to the following:
 ![Alt text](asset/testing.PNG?raw=true "Response Unit Testing")
 
-4. To run application,open cmd in your project directory and type
+6. To run application,open cmd in your project directory and type
 ```
 go run main.go
 ```
-5. Download [Redis for Windows](https://github.com/dmajkic/redis/downloads)
-6. After you download Redis, you’ll need to extract the executables and then double-click on the redis-server executable.
 
 **Sample Payload**
 1. [Login](asset/login.PNG)

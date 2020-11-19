@@ -1,9 +1,9 @@
 package service
 
 import (
-	"JWT_REST_MySQL_JWT_Redis/model"
-	"JWT_REST_MySQL_JWT_Redis/repository"
-	"JWT_REST_MySQL_JWT_Redis/util"
+	"JWT_REST_MUX_MySQL_Redis/model"
+	"JWT_REST_MUX_MySQL_Redis/repository"
+	"JWT_REST_MUX_MySQL_Redis/util"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"

@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"JWT_REST_MySQL_JWT_Redis/configuration"
-	"JWT_REST_MySQL_JWT_Redis/model"
+	"JWT_REST_MUX_MySQL_Redis/configuration"
+	"JWT_REST_MUX_MySQL_Redis/model"
 	"log"
 
 	// Use prefix blank identifier _ when importing driver for its side

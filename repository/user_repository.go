@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"JWT_REST_MySQL_JWT_Redis/configuration"
-	"JWT_REST_MySQL_JWT_Redis/model"
-	"JWT_REST_MySQL_JWT_Redis/util"
+	"JWT_REST_MUX_MySQL_Redis/configuration"
+	"JWT_REST_MUX_MySQL_Redis/model"
+	"JWT_REST_MUX_MySQL_Redis/util"
 	"errors"
 	"log"
 	"strconv"

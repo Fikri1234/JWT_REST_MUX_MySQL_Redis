@@ -1,9 +1,9 @@
 package router
 
 import (
-	"JWT_REST_MySQL_JWT_Redis/model"
-	"JWT_REST_MySQL_JWT_Redis/service"
-	"JWT_REST_MySQL_JWT_Redis/util"
+	"JWT_REST_MUX_MySQL_Redis/model"
+	"JWT_REST_MUX_MySQL_Redis/service"
+	"JWT_REST_MUX_MySQL_Redis/util"
 	"net/http"
 
 	"github.com/gorilla/mux"

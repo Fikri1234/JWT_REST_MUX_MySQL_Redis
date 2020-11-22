@@ -1,6 +1,7 @@
 package router
 
 import (
+	"JWT_REST_MUX_MySQL_Redis/configuration"
 	"JWT_REST_MUX_MySQL_Redis/model"
 	"JWT_REST_MUX_MySQL_Redis/service"
 	"JWT_REST_MUX_MySQL_Redis/util"
@@ -37,6 +38,8 @@ func NewRouter() *mux.Router {
 				Name(r.Name)
 		}
 	}
+
+	router.Use(configuration.CORS)
 
 	return router
 }

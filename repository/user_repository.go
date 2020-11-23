@@ -98,19 +98,12 @@ func GetUserAll() ([]model.MUser, error) {
 		return mUsers, err
 	}
 
-	var isError bool
 	for rows.Next() {
 		if err := rows.Scan(&mUser.ID, &mUser.UserName, &mUser.Password, &mUser.AccountExpired,
 			&mUser.AccountLocked, &mUser.CredentialsExpired, &mUser.Enabled); err != nil {
-			isError = true
-			break
-		} else {
-			mUsers = append(mUsers, mUser)
+			return mUsers, err
 		}
-	}
-
-	if isError {
-		return mUsers, err
+		mUsers = append(mUsers, mUser)
 	}
 
 	return mUsers, nil

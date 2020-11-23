@@ -60,6 +60,7 @@ var pool *redis.Pool
 // GetUserDetailByID by id
 func GetUserDetailByID(w http.ResponseWriter, r *http.Request) {
 
+	// ----------------- Test redis -----------------
 	pool = &redis.Pool{
 		MaxActive: 50,
 		MaxIdle:   1000,
@@ -97,6 +98,7 @@ func GetUserDetailByID(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
+	// ----------------- Test redis -----------------
 
 	var userDtl model.MUserDetail
 	params := mux.Vars(r)
